@@ -1,3 +1,33 @@
-h1, p {
-  font-family: Lato;
+h1,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+p {
+  font-size: 2rem;
+  text-align: center;
+}
+ul,
+li {
+  list-style: none;
+}
+li {
+  font-size: 1.5rem;
+  color: rgb(37, 37, 134);
+}
+button {
+  padding: 0.5em;
+  background-color: rgb(68, 182, 190);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: rgb(37, 58, 58);
 }
