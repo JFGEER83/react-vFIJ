@@ -3,6 +3,7 @@ import './style.css';
 
 import SubTitle from './SubTitle';
 import Footer from './Footer';
+import Prenom from './prenom';
 
 export default function App() {
   const name = 'JF';
@@ -30,6 +31,12 @@ export default function App() {
       <ul>
         {maListe.map((prenom) => (
           <li>{prenom}</li>
+        ))}
+      </ul>
+      <h2>liste prenom - props</h2>
+      <ul>
+        {maListe.map((element) => (
+          <Prenom prenom={element} />
         ))}
       </ul>
       <h2>liste ingrédients bolo</h2>
