@@ -4,6 +4,8 @@ import './style.css';
 import SubTitle from './SubTitle';
 import Footer from './Footer';
 import Prenom from './prenom';
+import Employee from './Employee';
+import Voitures from './Voitures';
 
 export default function App() {
   const name = 'JF';
@@ -47,19 +49,30 @@ export default function App() {
       </ul>
       <h2>liste objets employés</h2>
       <ul>
-        {employees.map((employees) => (
-          <li style={{ color: employees.salaire >= 2000 ? 'green' : 'red' }}>
-            {' '}
+        {employees.map((employee) => (
+          <li style={{ color: employee.salaire >= 2000 ? 'green' : 'red' }}>
             {/*coouleur salaire change si il est en dessous de 2000  */}
-            {employees.prenom}-{employees.salaire}
+            {employee.prenom}-{employee.salaire}
           </li>
         ))}
       </ul>
+      <h2>liste props employees</h2>
+      <ul>
+        {employees.map((element) => (
+          <Employee prenom={element.prenom} salaire={element.salaire} />
+        ))}
+      </ul>
+
       <h2>True False</h2>
       <h3>{majeur ? 'Bienvenue' : 'Désolé'}</h3>
       <h3>{dansLeSecret && "Le secret est qu'il n'y a pas de secret!"}</h3>
 
       <button>un super bouton</button>
+
+      <h2>Studio Giblhi</h2>
+
+      <Voitures />
+
       <Footer />
     </div>
   );
