@@ -14,7 +14,7 @@ const Planetes = () => {
   return (
     <div>
       <h2>Planetes</h2>
-      {planetes.map(planet => <p>{planet.map}</p>)}
+      {planetes.map(planet => <p>{planet.name}.{planet.terrain}.{planet.population}</p>)}
       
       <button>Clique ici pour afficher les planètes </button>
     </div>
