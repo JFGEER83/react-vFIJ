@@ -6,6 +6,8 @@ import Footer from './Footer';
 import Prenom from './prenom';
 import Employee from './Employee';
 import Voitures from './Voitures';
+import Counter from './Counter';
+import Kayne from './Kayne';
 
 export default function App() {
   const name = 'JF';
@@ -72,6 +74,10 @@ export default function App() {
       <h2>Studio Giblhi</h2>
 
       <Voitures />
+
+      <Counter />
+
+       <Kayne />
 
       <Footer />
     </div>
