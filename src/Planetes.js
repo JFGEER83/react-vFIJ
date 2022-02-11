@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
 
 const Planetes = () => {
-  let [planet, setPlanet] = useState('Ma planete');
+  const [planetes, setPlanetes] = useState([]);
 
   useEffect(() => {
-    fetch('https://swapi.dev/api/planets/1/name/')
+    fetch('https://swapi.dev/api/planets/')
       .then((reponse) => reponse.json())
-      .then((data) => setPlanet(data.results));
-  }, []);
+      .then((data) => { 
+        //console.log(data.results);
+        setPlanetes(data.results);
+      });
+    }, []);
   return (
     <div>
-      <h2>{planet}</h2>
+      <h2>Planetes</h2>
+      {planetes.map(planet => <p>{planet.map}</p>)}
+      
       <button>Clique ici pour afficher les planètes </button>
     </div>
   );
