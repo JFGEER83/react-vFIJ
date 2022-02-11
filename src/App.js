@@ -8,6 +8,7 @@ import Employee from './Employee';
 import Voitures from './Voitures';
 import Counter from './Counter';
 import Kayne from './Kayne';
+import Planetes from './Planetes';
 
 export default function App() {
   const name = 'JF';
@@ -78,6 +79,8 @@ export default function App() {
       <Counter />
 
        <Kayne />
+
+       <Planetes/>
 
       <Footer />
     </div>
