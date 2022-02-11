@@ -7,7 +7,7 @@ const Kayne = () => {
     fetch('https://api.kanye.rest/')
       .then((reponse) => reponse.json())
       .then((data) => setCitation(data.quote));
-  });
+  }, []);
 
   return (
     <div>

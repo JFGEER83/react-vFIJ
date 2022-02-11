@@ -4,9 +4,9 @@ const Planetes = () => {
   let [planet, setPlanet] = useState('Ma planete');
 
   useEffect(() => {
-    fetch('https://swapi.dev/api/')
+    fetch('https://swapi.dev/api/planets/1/name/')
       .then((reponse) => reponse.json())
-      .then((data) => setCitation(data.quote));
+      .then((data) => setPlanet(data.results));
   }, []);
   return (
     <div>
