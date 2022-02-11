@@ -9,6 +9,7 @@ import Voitures from './Voitures';
 import Counter from './Counter';
 import Kayne from './Kayne';
 import Planetes from './Planetes';
+import Starship from './starship';
 
 export default function App() {
   const name = 'JF';
@@ -78,9 +79,11 @@ export default function App() {
 
       <Counter />
 
-       <Kayne />
+      <Kayne />
 
-       <Planetes/>
+      <Planetes />
+
+      <Starship />
 
       <Footer />
     </div>
